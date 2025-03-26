@@ -2,8 +2,6 @@
 
 A modern, mobile-friendly implementation of the classic Minesweeper game with keyboard and touch controls.
 
-![Game Screenshot](screenshot.png) *(optional - you can add this later)*
-
 ## 🎮 How to Play
 
 - **Left-click** or **Tap**: Reveal a cell
