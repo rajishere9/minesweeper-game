@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Minesweeper</h1>
+    
+    <div class="game-container" role="region" aria-label="Minesweeper Game">
+        <div class="controls" role="toolbar" aria-label="Game Controls">
+            <div class="difficulty" role="group" aria-label="Difficulty Level">
+                <button id="easy" class="active" aria-pressed="true">Easy</button>
+                <button id="medium" aria-pressed="false">Medium</button>
+                <button id="hard" aria-pressed="false">Hard</button>
+            </div>
+            <button id="new-game" title="New Game" aria-label="New Game">↻</button>
+        </div>
+        
+        <div class="stats" role="status" aria-live="polite">
+            <div>Mines: <span id="mines-count">10</span></div>
+            <div>Flags: <span id="flags-count">0</span></div>
+            <div>Time: <span id="time">0</span></div>
+        </div>
+        
+        <div class="board" id="board" role="grid" aria-label="Game Board"></div>
+    </div>
+    
+    <div id="game-over" class="game-over hidden" role="alert" aria-live="assertive">
+        <h2 id="game-over-message">You Win!</h2>
+        <button id="play-again" aria-label="Play Again">Play Again</button>
+    </div>
+    
+    <div class="instructions">
+        <h2>How to Play</h2>
+        <p>• Tap to reveal a cell</p>
+        <p>• Long press to place/remove a flag</p>
+        <p>• Avoid all the mines</p>
+        <p>• Numbers show how many mines are adjacent</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
